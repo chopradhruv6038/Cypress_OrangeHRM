@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dashboard": "npx cypress run -b chrome --headed --record --key 219e54aa-237c-4bf6-aa6a-435be6335b34"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^12.3.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.2.3"
   }
 }
