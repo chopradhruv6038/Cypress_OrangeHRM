@@ -70,6 +70,8 @@ loginPage.enterPassword(loginInfo.invalidPassword);
 
 loginPage.clickLoginBtn();
 
+cy.log('login Tests completed');
+
 })
 
 
