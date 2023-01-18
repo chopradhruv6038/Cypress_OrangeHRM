@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run":"npx cypress run -b chrome --headed",
+    "run":"npx cypress run",
     "dashboard": "npx cypress run -b chrome --headed --record --key 219e54aa-237c-4bf6-aa6a-435be6335b34",
     "parallel": "cypress-parallel -d cypress/e2e/ -t 2 -s run"
   },
