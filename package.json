@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run":"npx cypress run --record --key 219e54aa-237c-4bf6-aa6a-435be6335b34",
-    "dashboard": "npx cypress run -b chrome --headed --record --key 219e54aa-237c-4bf6-aa6a-435be6335b34",
+    "run":"npx cypress run --record --key 62673509-422b-4b05-a91f-fecff795619c",
+    "dashboard": "npx cypress run -b chrome --headed --record --key 62673509-422b-4b05-a91f-fecff795619c ",
     "parallel": "cypress-parallel -d cypress/e2e/ -t 2 -s run"
   },
   "keywords": [],
