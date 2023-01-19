@@ -40,6 +40,8 @@ loginPage.enterPassword(loginInfo.validPassword);
 
 loginPage.clickLoginBtn();
 
+loginPage.assertDashboardTextonvalidLogin();
+
 })
 
 it('Validating Invalid login with Incorrect username and correct password', ()=> {
@@ -49,6 +51,10 @@ loginPage.enterUsername(loginInfo.invalidUsername)
 loginPage.enterPassword(loginInfo.validPassword);
 
 loginPage.clickLoginBtn();
+
+loginPage.assertInvalidCredTextOnInvalidLogin();
+
+loginPage.assertInvalidLoginIconPresence();
 
 })
 
@@ -60,6 +66,10 @@ loginPage.enterPassword(loginInfo.invalidPassword);
 
 loginPage.clickLoginBtn();
 
+loginPage.assertInvalidCredTextOnInvalidLogin();
+
+loginPage.assertInvalidLoginIconPresence();
+
 })
 
 it('Validating Invalid login with Incorrect username and Incorrect password', ()=> {
@@ -69,6 +79,10 @@ loginPage.enterUsername(loginInfo.invalidUsername)
 loginPage.enterPassword(loginInfo.invalidPassword);
 
 loginPage.clickLoginBtn();
+
+loginPage.assertInvalidCredTextOnInvalidLogin();
+
+loginPage.assertInvalidLoginIconPresence();
 
 cy.log('login Tests completed');
 
